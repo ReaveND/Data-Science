@@ -1,0 +1,55 @@
+K-Means Clustering:
+-------------------
+1. It is an unsupervised iterative clustering technique.
+2. It partitions the given data set into k predefined distinct 
+clusters.
+3. A cluster is defined as a collection of data points consisting 
+of certain similarities.
+
+Algorithm:
+-----------
+Step1: Choose the number of clusters K.
+
+Step2: Randomly select any K data points as cluster centers. Select
+       cluster centers such a way that they are as farther as
+       possible from each other.
+
+Step3: Calculate the distance between each data point with each 
+       cluster center. Here the distance may be calculated either 
+       by using given distance function or by using euclidean 
+       distance formula.
+
+Step4: Assign each data point to some cluster whose center is
+       neatrest to that data point.
+
+Step5: Re-compute the center of newly formed clusters. The center 
+       of a cluster can be computed by taking mean of all the data
+       points contained in that cluster.
+
+Step6: Keep repeating the procedure from Step3 to Step5 until any 
+of the following stopping criteria is met:
+	* Center of newly formed clusters do not change.
+	* Data points remain present in the same cluster.
+	* Maximum number of iterations are reached.
+
+
+Example: Cluster the following data points using K-Means algorithm
+	 where value of k is 2.
+	 A(2,2), B(3,2), C(1,1), D(3,1), E(1.5,0.5)
+
+Assume A(2,2) and C(1,1) are the centers of the two clusters.
+
+Cluster-1: A(2,2), B(3,2), D(3,1)
+Cluster-2: C(1,1), E(1.5.0.5)
+
+Re-Compute the new cluster centers:
+For Cluster-1:
+		((2+3+3)/3,(2+2+1)/3)
+		=(2.67, 1.67)
+For Cluster-2:
+		((1+1.5)/2,(1+.5)/2)
+		=(1.25,.75)
+
+  
+
+

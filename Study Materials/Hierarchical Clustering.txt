@@ -1,0 +1,32 @@
+Hierarchical Clustering: It is an unsupervised ML algorithm which
+is used to group the given unlabeled dataset into clusters. This
+technique starts by treating each data point as a separate cluster.
+Then, it repeatedly executes the following two steps:
+1. Identify two clusters that are closest together 
+2. Merge these two closest clusters into one cluster.
+This iterative process continues until all the clusters are
+merged together into a single cluster.
+
+Next, we develop the hierarchy of clusters in the form of a tree
+known as dendogram. In a dendogram the Y-axis shows the distance
+between the data points and the X-axis shows all the data points 
+of the given dataset.
+
+The hierarchical clustering technique has two approaches:
+
+1. Agglomerative Hierarchical Clustering: This is  a bottom-up 
+approach which starts considering all the data points as a single
+cluster and merge the closest pair of clusters together until one 
+cluster is left.
+
+2. Divisive Hierarchical Clustering: This is a top-down approach. It
+starts by considering all the available data points as a single 
+cluster and partition that cluster into different number of clusters
+until we reach our goal.
+
+Why Hierarchical clustering is needed:
+---------------------------------------
+In K-Means clustering algorithm we have to specify the number of
+clusters in advance and it also tries to create the clusters of the
+same size. To overcome the above two problems we can use hierarchical
+clustering algorithm. 
